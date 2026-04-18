@@ -3,11 +3,23 @@
  * and scoped locally.
  */
 
+:root {
+  --ifm-color-primary: #5293C8;
+  --ifm-color-primary-dark: #0c529c;
+  --ifm-color-primary-darker: #002D5D;
+  --ifm-color-primary-darkest: #011b38;
+  --ifm-color-primary-light: #5293C8;
+  --ifm-color-primary-lighter: #93c3eb;
+  --ifm-color-primary-lightest: #bedbf3;
+}
+
 .heroBanner {
   padding: 4rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
+  background: linear-gradient(45deg, hsla(211, 100%, 18%, 1) 0%, hsla(207, 52%, 55%, 1) 100%);
+  color: white;
 }
 
 @media screen and (max-width: 996px) {
