@@ -77,15 +77,19 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'SoftLog MPLS',
+      title: 'SoftLock MPLS',
       logo: {
         alt: 'SoftLock',
         src: 'img/favicon.ico',
+        style: {
+          borderRadius: '25%'
+        }
       },
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'knowledgeBase',
+          sidebarId: 'tutorialSidebar',
+          // sidebarId: 'knowledgeBase',
           position: 'left',
           label: 'Knowledge Base',
         },

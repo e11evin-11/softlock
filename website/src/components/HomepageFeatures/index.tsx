@@ -7,6 +7,7 @@ type FeatureItem = {
   title: string;
   Image: string;
   description: ReactNode;
+  link?: string
 };
 
 const FeatureList: FeatureItem[] = [
@@ -19,7 +20,8 @@ const FeatureList: FeatureItem[] = [
       on operational security and safety online
       (How to set up Tor/VPN, Tails, etc.)
       </>
-    )
+    ),
+    link: './docs/Introduction'
   },
   {
     title: 'SoftLock Minneapolis',
@@ -41,11 +43,13 @@ const FeatureList: FeatureItem[] = [
   }
 ];
 
-function Feature({title, Image, description}: FeatureItem) {
+function Feature({title, Image, description,link}: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <img className={styles.featureSvg} src={Image} role="img" />
+      <a href={link}>
+        <img className={styles.featureImage} src={Image} role="img"/>
+      </a>
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>

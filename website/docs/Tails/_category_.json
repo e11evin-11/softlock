@@ -1,0 +1,8 @@
+{
+  "label": "Tails OS",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Tails, or \"The Amnesic Incognito Live System,\" is a live operating system which routes all traffic through Tor automatically."
+  }
+}
