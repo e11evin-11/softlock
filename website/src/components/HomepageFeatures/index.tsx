@@ -5,36 +5,37 @@ import styles from './styles.module.css';
 
 type FeatureItem = {
   title: string;
-  Image: string;
+  Image?: string;
+  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
   description: ReactNode;
-  link?: string
+  link?: string;
 };
 
 const FeatureList: FeatureItem[] = [
   {
     title: 'Knowledge Base',
-    Image: 'TODO',
+    Svg: require('@site/static/img/book.svg').default,
     description: (
       <>
-      Here you can find educational resources
-      on operational security and safety online
+      Learn more about operational security and safety online
       (How to set up Tor/VPN, Tails, etc.)
       </>
     ),
-    link: './docs/Introduction'
+    link: './docs'
   },
   {
-    title: 'SoftLock Minneapolis',
-    Image: require('@site/static/img/logo.png').default,
+    title: 'Security Training',
+    Image: '',
+    Svg: require('@site/static/img/lock.svg').default,
     description: (
       <>
-        TODO
+        Sign up for Digital Security training
       </>
     ),
   },
   {
     title: 'TODO',
-    Image: 'TODO',
+    Svg: require('@site/static/img/book.svg').default,
     description: (
       <>
         Find third item!
@@ -43,12 +44,12 @@ const FeatureList: FeatureItem[] = [
   }
 ];
 
-function Feature({title, Image, description,link}: FeatureItem) {
+function Feature({title, description,link,Svg}: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
       <a href={link}>
-        <img className={styles.featureImage} src={Image} role="img"/>
+        <Svg className={styles.featureImage} role="img"/>
       </a>
       </div>
       <div className="text--center padding-horiz--md">
