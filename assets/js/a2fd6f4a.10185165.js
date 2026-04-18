@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunke11_evin_github_io=self.webpackChunke11_evin_github_io||[]).push([["178"],{613(e){e.exports=JSON.parse('{"metadata":{"permalink":"/softlock/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":0,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

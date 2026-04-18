@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunke11_evin_github_io=self.webpackChunke11_evin_github_io||[]).push([["833"],{5513(e){e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"","permalink":"/softlock/blog/2026/04/17/","unlisted":false,"date":"2026-04-17T00:00:00.000Z"}]}')}}]);

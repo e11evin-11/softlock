@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunke11_evin_github_io=self.webpackChunke11_evin_github_io||[]).push([["220"],{1912(o){o.exports=JSON.parse('{"blogBasePath":"/softlock/blog","blogTitle":"Blog","authorsListPath":"/softlock/blog/authors"}')}}]);
