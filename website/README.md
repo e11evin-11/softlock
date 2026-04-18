@@ -33,7 +33,7 @@ USE_SSH=true yarn deploy
 ```
 
 Not using SSH:
-
+GIT
 ```bash
 GIT_USER=<Your GitHub username> yarn deploy
 ```
