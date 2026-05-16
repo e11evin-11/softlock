@@ -21,7 +21,7 @@ const FeatureList: FeatureItem[] = [
       (How to set up Tor/VPN, Tails, etc.)
       </>
     ),
-    link: './docs'
+    link: './docs/Introduction'
   },
   {
     title: 'Security Training',
